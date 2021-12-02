@@ -35,4 +35,28 @@ public class Album implements Serializable {
     protected void setGenre(String genre) {
         this.genre = genre;
     }
+
+    protected long getId() {
+        return id;
+    }
+
+    protected String getArtist() {
+        return artist;
+    }
+
+    protected String getName() {
+        return name;
+    }
+
+    protected Date getReleaseDate() {
+        return releaseDate;
+    }
+
+    protected double getSales() {
+        return sales;
+    }
+
+    protected String getGenre() {
+        return genre;
+    }
 }

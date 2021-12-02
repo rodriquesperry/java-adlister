@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class Quote extends Serializable {
+public class Quote implements Serializable {
 
     private long id;
     private String content;
@@ -9,15 +9,28 @@ public class Quote extends Serializable {
 
     public Quote() {}
 
-    public void setId(long id) {
+    protected void setId(long id) {
         this.id = id;
     }
 
-    public void setContent(String content) {
+    protected void setContent(String content) {
         this.content = content;
     }
 
-    public void setAuthor(String author) {
+    protected void setAuthor(String author) {
         this.author = author;
     }
+
+    protected long getId() {
+        return id;
+    }
+
+    protected String getContent() {
+        return content;
+    }
+
+    protected String getAuthor() {
+        return author;
+    }
+
 }

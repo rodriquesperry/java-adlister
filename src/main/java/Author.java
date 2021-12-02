@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class Author extends Serializable {
+public class Author implements Serializable {
 
     private long id;
     private String firstName;
@@ -18,5 +18,17 @@ public class Author extends Serializable {
 
     protected void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    protected long getId() {
+        return id;
+    }
+
+    protected String getFirstName() {
+        return firstName;
+    }
+
+    protected String getLastName() {
+        return lastName;
     }
 }
