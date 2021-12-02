@@ -16,7 +16,7 @@
 
     <div class="container" style="margin-top: 7rem">
         <h2 class="mb-3">Pizza Type</h2>
-        <form action="/pizza.jsp" method="post">
+        <form action="/pizza-order" method="post">
 
             <%-- Inputs for pizza type selection --%>
             <div class="input-group mb-3">
@@ -25,9 +25,9 @@
                 </div>
                 <select class="custom-select" name="crust" id="crust">
                     <option selected>Choose...</option>
-                    <option value="${crust}">Thin Crust</option>
-                    <option value="${crust}">Pan Crust</option>
-                    <option value="${crust}">Stuffed Crust</option>
+                    <option value="thin">Thin Crust</option>
+                    <option value="pan">Pan Crust</option>
+                    <option value="stuffed">Stuffed Crust</option>
                 </select>
             </div>
 
@@ -94,9 +94,30 @@
                 </div>
 
                 <div class="col-4 my-3 form-check">
-                    <input class="form-check-input" type="checkbox" name="toppings" value="${toppings}" id="peppers">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="green peppers" id="peppers">
                     <label class="form-check-label" for="peppers">
                         Green Peppers
+                    </label>
+                </div>
+
+                <div class="col-4 my-3 form-check">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="spinach leaf" id="spinach">
+                    <label class="form-check-label" for="spinach">
+                        Spinach Leaf
+                    </label>
+                </div>
+
+                <div class="col-4 my-3 form-check">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="chicken" id="chicken">
+                    <label class="form-check-label" for="chicken">
+                        Chicken
+                    </label>
+                </div>
+
+                <div class="col-4 my-3 form-check">
+                    <input class="form-check-input" type="checkbox" name="toppings" value="green olives" id="gOlives">
+                    <label class="form-check-label" for="gOlives">
+                        Green Olives
                     </label>
                 </div>
             </div>
