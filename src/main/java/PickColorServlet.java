@@ -9,14 +9,13 @@ import java.io.IOException;
 public class PickColorServlet extends HttpServlet {
 
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         req.getRequestDispatcher("/pickcolor.jsp").forward(req, res);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res)  throws ServletException, IOException {
-        System.out.println(req.getParameter("colorChoice"));
         String color = req.getParameter("colorChoice");
-        // getSession https://www.baeldung.com/java-request-getsession && https://stackoverflow.com/questions/29195346/how-to-pass-parameter-from-on-servlet-to-another
+        // getSession() from https://www.baeldung.com/java-request-getsession && https://stackoverflow.com/questions/29195346/how-to-pass-parameter-from-on-servlet-to-another
         req.getSession().setAttribute("color", color);
         res.sendRedirect("/viewcolor");
     }

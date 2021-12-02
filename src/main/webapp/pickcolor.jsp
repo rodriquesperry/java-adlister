@@ -9,7 +9,7 @@
 <html>
 <head>
     <%@ include file="partials/head.jsp"%>
-    <title>Title</title>
+    <title>Pick Color</title>
 </head>
 <body>
 

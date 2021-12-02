@@ -11,7 +11,6 @@ public class ViewColorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         String color = (String) req.getSession().getAttribute("color");
-
         req.setAttribute("colorChoice", color);
 
         req.getRequestDispatcher("/viewcolor.jsp").forward(req, res);
