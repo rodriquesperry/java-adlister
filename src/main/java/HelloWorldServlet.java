@@ -22,7 +22,7 @@ public class HelloWorldServlet extends HttpServlet {
                 out.println("<h1>Hello, " + searchQuery + "!</h1>");
 
             } else {
-                out.println("<h1>Hello World!</h1>");
+                out.println("<h1>Hello World!!</h1>");
             }
 
         }
