@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
- <%@ include file="partials/head.jsp"%>
+
     <div class="container" style="margin-top: 7rem">
         <form action="/pickcolor" method="post">
             <div class="form-group my-3">
@@ -21,7 +21,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
     </div>
 
     <%@ include file="partials/scripts.jsp"%>
