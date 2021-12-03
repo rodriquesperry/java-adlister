@@ -2,5 +2,5 @@
 import java.util.List;
 
 public interface Ads {
-    List<Ad> all();
+     List<Ad> all();
 }
