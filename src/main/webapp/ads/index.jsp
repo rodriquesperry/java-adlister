@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>View Ads</title>
+    <title>Current Ads</title>
 </head>
 <body>
     <h1>Here are all the Ads</h1>

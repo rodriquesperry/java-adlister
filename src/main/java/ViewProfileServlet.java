@@ -9,7 +9,7 @@ import java.io.IOException;
 public class ViewProfileServlet extends HttpServlet {
 
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         req.getRequestDispatcher("/profile.jsp").forward(req, res);
     }
 
