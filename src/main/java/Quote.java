@@ -33,4 +33,6 @@ public class Quote implements Serializable {
         return author;
     }
 
+
+
 }
