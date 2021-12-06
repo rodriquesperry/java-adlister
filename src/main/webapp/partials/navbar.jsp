@@ -1,5 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="comment" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
